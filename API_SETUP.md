@@ -15,7 +15,7 @@
 
 Example:
 ```javascript
-const API_KEY = 'abc12345'; // Your actual key here
+const API_KEY = 'abc12345'; 
 ```
 
 ## API Endpoints Used
