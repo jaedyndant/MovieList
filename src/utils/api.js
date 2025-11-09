@@ -1,6 +1,6 @@
 const API_KEY = '6b140b84';
-const BASE_URL = 'http://www.omdbapi.com/';
-const POSTER_URL = 'http://img.omdbapi.com/';
+const BASE_URL = 'https://www.omdbapi.com/';
+const POSTER_URL = 'https://img.omdbapi.com/';
 
 export const searchMovies = async (query, page = 1) => {
   try {
