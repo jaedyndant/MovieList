@@ -1,8 +1,8 @@
-# 🎬 MovieList - Futuristic Cinema Search
+# MovieList - Futuristic Cinema Search
 
 A sleek, Apple-inspired movie search app with glassmorphic design and smooth animations. Search movies, view details, and manage your personal watchlist.
 
-## ✨ Features
+## Features
 
 - **Movie Search** - Find any movie using the OMDb API
 - **Detailed Info** - View plot, cast, ratings, and more
@@ -12,7 +12,7 @@ A sleek, Apple-inspired movie search app with glassmorphic design and smooth ani
 - **Responsive Design** - Works on desktop and mobile
 - **Loading States** - Elegant skeletons and empty states
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Install dependencies:**
    ```bash
@@ -26,15 +26,36 @@ A sleek, Apple-inspired movie search app with glassmorphic design and smooth ani
 
 3. **Open browser:** http://localhost:3000
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **React** - UI framework
-- **Framer Motion** - Animations
-- **OMDb API** - Movie data
-- **CSS-in-JS** - Styled components
-- **LocalStorage** - Watchlist persistence
+### Core Framework
+- **React 18.2.0** - Modern UI framework with hooks
+- **React DOM 18.2.0** - DOM rendering
+- **React Scripts 5.0.1** - Build tooling and development server
 
-## 🎨 Design
+### Animation & Styling
+- **Framer Motion 10.16.4** - Advanced animations and transitions
+- **CSS-in-JS** - Styled JSX for component styling
+- **Inter Font** - Typography from Google Fonts
+
+### API & Data
+- **OMDb API** - Movie database integration
+- **Fetch API** - HTTP requests
+- **LocalStorage** - Client-side data persistence
+
+### Development & Testing
+- **@testing-library/react 13.3.0** - React component testing
+- **@testing-library/jest-dom 5.16.4** - Jest DOM matchers
+- **@testing-library/user-event 13.5.0** - User interaction testing
+- **Web Vitals 2.1.4** - Performance monitoring
+
+### Build Tools
+- **Babel** - JavaScript transpilation
+- **Webpack** - Module bundling (via React Scripts)
+- **ESLint** - Code linting
+- **PostCSS** - CSS processing
+
+## Design
 
 - Dark glassmorphic theme
 - Apple-inspired typography (Inter font)
@@ -42,7 +63,7 @@ A sleek, Apple-inspired movie search app with glassmorphic design and smooth ani
 - Responsive grid layout
 - Premium visual feedback
 
-## 📱 Usage
+## Usage
 
 1. **Search** - Type movie name in search bar
 2. **Browse** - View results in responsive grid
@@ -50,4 +71,4 @@ A sleek, Apple-inspired movie search app with glassmorphic design and smooth ani
 4. **Watchlist** - Add/remove movies to save for later
 5. **Navigate** - Switch between Search and Watchlist views
 
-Built with modern React and cutting-edge design principles for a premium cinema experience! 🎭✨
+Built with modern React and cutting-edge design principles for a premium cinema experience.

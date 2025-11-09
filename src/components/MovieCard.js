@@ -177,6 +177,57 @@ const MovieCard = ({ movie, onCardClick, isInWatchlist, onWatchlistToggle }) => 
             font-size: 12px;
             padding: 8px;
           }
+
+          .movie-info {
+            padding: 12px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .movie-title {
+            font-size: 13px;
+            -webkit-line-clamp: 1;
+          }
+          
+          .movie-meta {
+            font-size: 11px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+          }
+          
+          .watchlist-btn {
+            font-size: 11px;
+            padding: 6px;
+          }
+
+          .movie-info {
+            padding: 10px;
+          }
+
+          .more-info-btn {
+            padding: 8px 16px;
+            font-size: 12px;
+          }
+        }
+
+        @media (max-width: 320px) {
+          .movie-title {
+            font-size: 12px;
+          }
+          
+          .movie-meta {
+            font-size: 10px;
+          }
+          
+          .watchlist-btn {
+            font-size: 10px;
+            padding: 5px;
+          }
+
+          .movie-info {
+            padding: 8px;
+          }
         }
       `}</style>
     </motion.div>

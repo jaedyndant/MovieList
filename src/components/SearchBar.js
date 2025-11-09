@@ -110,6 +110,47 @@ const SearchBar = ({ searchTerm, setSearchTerm, onSearch }) => {
             width: 40px;
             height: 40px;
           }
+
+          .search-container {
+            margin: 1.5rem 0 2rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .search-input {
+            font-size: 13px;
+            padding: 12px 18px;
+            padding-right: 52px;
+          }
+          
+          .search-button {
+            width: 36px;
+            height: 36px;
+            right: 6px;
+          }
+
+          .search-container {
+            margin: 1rem 0 1.5rem;
+            padding: 0 0.5rem;
+          }
+        }
+
+        @media (max-width: 320px) {
+          .search-input {
+            font-size: 12px;
+            padding: 10px 16px;
+            padding-right: 48px;
+          }
+          
+          .search-button {
+            width: 32px;
+            height: 32px;
+          }
+
+          .search-button svg {
+            width: 16px;
+            height: 16px;
+          }
         }
       `}</style>
     </motion.div>

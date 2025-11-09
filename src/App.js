@@ -66,11 +66,8 @@ function App() {
 
   return (
     <div className="app">
-      {/* Background Elements */}
       <div className="background-gradient"></div>
       <div className="background-particles"></div>
-      
-      {/* Header */}
       <motion.header
         className="header"
         initial={{ opacity: 0, y: -50 }}
@@ -107,7 +104,7 @@ function App() {
         </div>
       </motion.header>
 
-      {/* Main Content */}
+
       <main className="main">
         <div className="container">
           {currentView === 'search' && (
@@ -129,7 +126,7 @@ function App() {
             </motion.div>
           )}
 
-          {/* Content Area */}
+
           <AnimatePresence mode="wait">
             {loading ? (
               <motion.div
@@ -180,7 +177,7 @@ function App() {
         </div>
       </main>
 
-      {/* Movie Modal */}
+
       <MovieModal
         movie={selectedMovie}
         isOpen={showModal}
@@ -310,6 +307,12 @@ function App() {
           padding: 0 1rem;
         }
 
+        @media (max-width: 1200px) {
+          .movies-grid {
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+          }
+        }
+
         @media (max-width: 768px) {
           .header-content {
             padding: 1rem;
@@ -319,19 +322,24 @@ function App() {
 
           .logo {
             font-size: 20px;
+            text-align: center;
           }
 
           .nav {
             gap: 0.5rem;
+            width: 100%;
+            justify-content: center;
           }
 
           .nav-btn {
             padding: 8px 16px;
             font-size: 14px;
+            flex: 1;
+            max-width: 120px;
           }
 
           .movies-grid {
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 16px;
             padding: 0;
           }
@@ -342,6 +350,50 @@ function App() {
 
           .section-header p {
             font-size: 14px;
+          }
+
+          .main {
+            padding: 1rem 0;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .header-content {
+            padding: 0.75rem;
+          }
+
+          .logo {
+            font-size: 18px;
+          }
+
+          .nav-btn {
+            padding: 6px 12px;
+            font-size: 12px;
+          }
+
+          .movies-grid {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 12px;
+          }
+
+          .section-header h2 {
+            font-size: 20px;
+          }
+
+          .container {
+            padding: 0 0.5rem;
+          }
+        }
+
+        @media (max-width: 320px) {
+          .movies-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+          }
+
+          .nav-btn {
+            font-size: 11px;
+            padding: 5px 8px;
           }
         }
       `}</style>

@@ -104,8 +104,31 @@ const LoadingSkeleton = () => {
 
         @media (max-width: 768px) {
           .skeleton-grid {
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 16px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .skeleton-grid {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 12px;
+            padding: 0 0.5rem;
+          }
+
+          .skeleton-content {
+            padding: 12px;
+          }
+        }
+
+        @media (max-width: 320px) {
+          .skeleton-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+          }
+
+          .skeleton-content {
+            padding: 10px;
           }
         }
       `}</style>

@@ -8,7 +8,6 @@ export const searchMovies = async (query, page = 1) => {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('Error searching movies:', error);
     return { Error: 'Network error' };
   }
 };
@@ -19,7 +18,6 @@ export const getMovieDetails = async (imdbID) => {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('Error fetching movie details:', error);
     return { Error: 'Network error' };
   }
 };
