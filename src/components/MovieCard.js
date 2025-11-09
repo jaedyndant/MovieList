@@ -61,14 +61,18 @@ const MovieCard = ({ movie, onCardClick, isInWatchlist, onWatchlistToggle }) => 
 
       <style jsx>{`
         .movie-card {
-          background: rgba(255, 255, 255, 0.1);
-          backdrop-filter: blur(20px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
+          background: #1a1a1a;
+          border: 1px solid #333;
           border-radius: 16px;
           overflow: hidden;
           cursor: pointer;
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
           transition: all 0.3s ease;
+        }
+
+        .movie-card:hover {
+          border-color: #fff;
+          box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
         }
 
         .movie-poster {
@@ -102,14 +106,14 @@ const MovieCard = ({ movie, onCardClick, isInWatchlist, onWatchlistToggle }) => 
         }
 
         .more-info-btn {
-          background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+          background: white;
           border: none;
           border-radius: 25px;
           padding: 12px 24px;
-          color: white;
+          color: black;
           font-weight: 600;
           cursor: pointer;
-          box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4);
+          box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
         }
 
         .movie-info {
@@ -143,10 +147,10 @@ const MovieCard = ({ movie, onCardClick, isInWatchlist, onWatchlistToggle }) => 
         .watchlist-btn {
           width: 100%;
           padding: 10px;
-          border: 1px solid rgba(59, 130, 246, 0.5);
+          border: 1px solid #666;
           border-radius: 8px;
           background: transparent;
-          color: #3b82f6;
+          color: #999;
           font-size: 14px;
           font-weight: 500;
           cursor: pointer;
@@ -154,14 +158,15 @@ const MovieCard = ({ movie, onCardClick, isInWatchlist, onWatchlistToggle }) => 
         }
 
         .watchlist-btn:hover {
-          background: rgba(59, 130, 246, 0.1);
-          border-color: #3b82f6;
+          background: rgba(255, 255, 255, 0.1);
+          border-color: #fff;
+          color: #fff;
         }
 
         .watchlist-btn.in-watchlist {
-          background: linear-gradient(45deg, #10b981, #059669);
-          border-color: #10b981;
-          color: white;
+          background: white;
+          border-color: white;
+          color: black;
         }
 
         @media (max-width: 768px) {

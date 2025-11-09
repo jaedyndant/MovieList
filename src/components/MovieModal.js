@@ -128,16 +128,15 @@ const MovieModal = ({ movie, isOpen, onClose, isInWatchlist, onWatchlistToggle }
             }
 
             .modal-content {
-              background: rgba(26, 26, 46, 0.95);
-              backdrop-filter: blur(20px);
-              border: 1px solid rgba(255, 255, 255, 0.2);
+              background: #1a1a1a;
+              border: 2px solid #333;
               border-radius: 20px;
               max-width: 800px;
               width: 100%;
               max-height: 90vh;
               overflow-y: auto;
               position: relative;
-              box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 20px 60px rgba(255, 255, 255, 0.1);
             }
 
             .close-btn {
@@ -230,34 +229,35 @@ const MovieModal = ({ movie, isOpen, onClose, isInWatchlist, onWatchlistToggle }
             }
 
             .genre-tag {
-              background: rgba(59, 130, 246, 0.2);
-              border: 1px solid rgba(59, 130, 246, 0.3);
+              background: rgba(255, 255, 255, 0.1);
+              border: 1px solid #666;
               border-radius: 20px;
               padding: 6px 12px;
               font-size: 12px;
-              color: #93c5fd;
+              color: #ccc;
             }
 
             .watchlist-btn-large {
-              background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+              background: white;
               border: none;
               border-radius: 12px;
               padding: 14px 28px;
-              color: white;
+              color: black;
               font-weight: 600;
               cursor: pointer;
-              box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4);
+              box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
             }
 
             .watchlist-btn-large.in-watchlist {
-              background: linear-gradient(45deg, #10b981, #059669);
+              background: #333;
+              color: white;
             }
 
             .movie-description h3 {
               font-size: 20px;
               font-weight: 600;
               margin-bottom: 12px;
-              color: #93c5fd;
+              color: white;
             }
 
             .movie-description p {
@@ -278,7 +278,7 @@ const MovieModal = ({ movie, isOpen, onClose, isInWatchlist, onWatchlistToggle }
             }
 
             .credit-item strong {
-              color: #93c5fd;
+              color: white;
               margin-right: 8px;
             }
 

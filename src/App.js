@@ -199,7 +199,7 @@ function App() {
           left: 0;
           right: 0;
           bottom: 0;
-          background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+          background: #000000;
           z-index: -2;
         }
 
@@ -209,8 +209,8 @@ function App() {
           left: 0;
           right: 0;
           bottom: 0;
-          background-image: radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-                            radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+          background-image: radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.02) 0%, transparent 50%),
+                            radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
           z-index: -1;
         }
 
@@ -218,9 +218,9 @@ function App() {
           position: sticky;
           top: 0;
           z-index: 100;
-          background: rgba(26, 26, 46, 0.8);
+          background: rgba(0, 0, 0, 0.9);
           backdrop-filter: blur(20px);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          border-bottom: 1px solid #333;
         }
 
         .header-content {
@@ -249,25 +249,25 @@ function App() {
 
         .nav-btn {
           background: transparent;
-          border: 1px solid rgba(255, 255, 255, 0.2);
+          border: 1px solid #333;
           border-radius: 25px;
           padding: 10px 20px;
-          color: rgba(255, 255, 255, 0.7);
+          color: #999;
           font-weight: 500;
           cursor: pointer;
           transition: all 0.3s ease;
         }
 
         .nav-btn:hover {
-          border-color: rgba(59, 130, 246, 0.5);
-          color: #3b82f6;
-          background: rgba(59, 130, 246, 0.1);
+          border-color: #fff;
+          color: #fff;
+          background: rgba(255, 255, 255, 0.1);
         }
 
         .nav-btn.active {
-          background: linear-gradient(45deg, #3b82f6, #8b5cf6);
-          border-color: transparent;
-          color: white;
+          background: white;
+          border-color: white;
+          color: black;
         }
 
         .main {
@@ -289,10 +289,7 @@ function App() {
           font-size: 32px;
           font-weight: 700;
           margin-bottom: 8px;
-          background: linear-gradient(45deg, #3b82f6, #8b5cf6);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
+          color: white;
         }
 
         .section-header p {
